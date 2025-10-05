@@ -40,7 +40,7 @@ class BasePage:
         try:
             element.click()
         except:
-            self.driver.execute_script("arguments[0].click();", element)
+         self.driver.execute_script("arguments[0].click();", element)
 
     def fill_form_field(self, locator, *value):
         '''Заполнение поля формы.'''
