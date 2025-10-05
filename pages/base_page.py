@@ -40,11 +40,10 @@ class BasePage:
         try:
             element.click()
         except:
-            # Если Selenium жалуется, кликаем через JS
             self.driver.execute_script("arguments[0].click();", element)
 
     def fill_form_field(self, locator, *value):
         '''Заполнение поля формы.'''
         element = self.get_element(locator)
         self.scroll_to_element(locator)
-        element.send_keys(*value)  # распаковываем кортеж значений
+        element.send_keys(*value)
