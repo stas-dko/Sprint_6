@@ -1,0 +1,9 @@
+# .gitignore
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+*.log
+*.tmp
+.pytest_cache/
+allure-results/
